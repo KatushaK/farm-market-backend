@@ -12,7 +12,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const PORT = 8080 || process.env.PORT;
 
-app.use(express.json({ limit: "10mb" }))
+app.use(express.json({ limit: "50mb" }))
 app.use(cors());
 
 
